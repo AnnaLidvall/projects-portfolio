@@ -12,7 +12,7 @@ A responsive Astro starter portfolio template designed to be easy to customize a
 - **Fully Responsive:** Optimized for mobile, tablet, and desktop.
 - **Performance:** Optimized for perfect Lighthouse scores.
 - **SEO Ready:** Open Graph and semantic HTML
-- **Fast** — Static-first architecture with zero JS by default
+- **Fast** — Static-first architecture
 
 ## 🚀 Getting Started
 Make sure you have **Node.js** v22.12.0 or higher installed on your machine.
@@ -51,7 +51,7 @@ open `src/config.ts` and update the `baseTheme` variable to one of the available
 ## 📁 Project Structure
 ```
 ├── public/              # Static assets
-├── data/                # JSON files for project data
+├── data/                # jsON files for project data
 ├── src/
 │   ├── components/      # Reusable Astro components
 │   ├── layouts/         # Layout templates with Meta tags
