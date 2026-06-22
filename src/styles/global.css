@@ -93,6 +93,14 @@
 @layer base {
   /* Theme Variations */
   :root,
+  [data-theme="forest-dark"] {
+    --color-background: #10231A;
+    --color-accent: #7FD17F;
+    --color-maintext: #F2F7EF;
+    --color-subtext: #b8ccba;
+    --color-textrain: #7BA388;
+  }
+
   [data-theme="default-dark"] {
     --color-background: #121212;
     --color-accent: #EAB308;
