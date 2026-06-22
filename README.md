@@ -1,80 +1,74 @@
-# Projects Portfolio Template
+# Anna Lidvall: Projects Portfolio
 
-A responsive Astro starter portfolio template designed to be easy to customize as a reusable template.
+My personal portfolio site. It shows the work I have done during my studies, with a focus on SEO and UX research, most of all the **Eira Bygg och Fix** website.
+
+I study the bachelor program in Digital Information Design and Development (Kandidatprogram i digital informationsdesign och utveckling) at the **University of Borås** in Sweden, and I spent an exchange semester at **Saxion University of Applied Sciences** in Enschede.
+
+🔗 **Live site:** https://projects-portfolio.annalidvall.workers.dev/
 
 ![Astro](https://img.shields.io/badge/Astro-6.x-FF5D01?logo=astro&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.x-38B2AC?logo=tailwindcss&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-## ✨ Features
-- **Centralized Data:** All content in `/data/` for easy customization
-- **Built-in Themes**: Choose a costum theme color palettes from a single config file.
-- **Fully Responsive:** Optimized for mobile, tablet, and desktop.
-- **Performance:** Optimized for perfect Lighthouse scores.
-- **SEO Ready:** Open Graph and semantic HTML
-- **Fast** — Static-first architecture
+## ✨ Highlights
+- **Fast:** built with Astro, so pages load quickly.
+- **Fully responsive:** works on mobile, tablet, and desktop.
+- **Accessible and SEO-ready:** semantic HTML and Open Graph metadata.
+- **Easy to update:** all of my content lives in `/data`.
 
-## 🚀 Getting Started
-Make sure you have **Node.js** v22.12.0 or higher installed on your machine.
+## 🚀 Running locally
+Requires **Node.js** v22.12.0 or higher.
 
-1. Click **Use this template** on this repository.
-2. Choose **Create a new repository**.
-3. Clone your new repository: `git clone <your-repo-url>`
-4. Navigate to your repo: `cd <your-repo-name>`
-5. Install dependencies: `npm install`
-6. Start development server: `npm run dev`
-7. Update your content in `/data`
-8. Deploy on your preferred platform
-
-### Replace Content
-
-Edit **`data/site.ts`** to update:
-
-- Hero section texts
-- About section texts
-- experience cards content 
-- Archive projects page content
-- Contact links
-
-### Replace Images
-
-Replace the sample images in **`/public`** with your own:
-
-- Featured projects cards images
-- Favicon/logo
-
-### 🎨 Theme Switching
-This template comes with multiple built-in color palettes. To change the theme of your portfolio, 
-open `src/config.ts` and update the `baseTheme` variable to one of the available options:
-`'default', 'strategic', 'innovator', 'executive'`
-
-## 📁 Project Structure
+```bash
+git clone https://github.com/AnnaLidvall/projects-portfolio.git
+cd projects-portfolio
+npm install
+npm run dev
 ```
-├── public/              # Static assets
-├── data/                # jsON files for project data
+
+The dev server runs at `localhost:4321`.
+
+## 📝 Editing the content
+
+All of the portfolio content lives in **`data/`**:
+
+- **`data/site.ts`**: hero text, about section, experience, featured projects, and contact links.
+- **`data/nav.ts`**: the in-page navigation links.
+
+Project images live in **`/public`**.
+
+The color theme is set in **`src/config.ts`** via the `baseTheme` variable
+(`'default'`, `'strategic'`, `'innovator'`, `'executive'`).
+
+## 📁 Project structure
+```
+├── public/              # Static assets (images, favicon)
+├── data/                # Portfolio content (site.ts, nav.ts)
 ├── src/
 │   ├── components/      # Reusable Astro components
-│   ├── layouts/         # Layout templates with Meta tags
+│   ├── layouts/         # Layout templates with meta tags
 │   ├── pages/           # Site routes (index.astro)
-│   └── styles/          # global css styles
-│   └── config.ts        # Global site configuration
+│   ├── styles/          # Global CSS styles
+│   └── config.ts        # Theme configuration
 ├── astro.config.mjs     # Astro configuration
-└── tsconfig.json        # Typescript configuration
+└── tsconfig.json        # TypeScript configuration
 ```
 
-## 🛠 Commands 
+## 🛠 Commands
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
 | `npm install`             | Installs dependencies                            |
 | `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run build`           | Builds the production site to `./dist/`          |
+| `npm run preview`         | Previews the build locally before deploying      |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 🤝 Contributions
-Please read the [Contributing Guide](CONTRIBUTING.md) before opening a PR.
+## 🙏 Credits
+Built on the **Projects Portfolio Template** created by **Masoud Soleymani**,
+used and customized here under the MIT License.
 
 ## 📝 License
-This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute this template.
+Licensed under the [MIT License](LICENSE).
+</content>
+</invoke>
