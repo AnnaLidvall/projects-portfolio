@@ -10,26 +10,57 @@ const { project, imageSrc: imageOverride } = Astro.props;
 
 const techCategories = project.techCategories;
 const imageSrc = imageOverride ?? (project.image ? (project.image.startsWith('/') ? project.image : `/${project.image}`) : undefined);
+const url = 'url' in project ? project.url : undefined;
 ---
 
 <article class="scroll-stat panel-card group space-y-6">
   <header>
     <h3 class="text-2xl font-semibold text-slate">
-      {project.title}
+      {url ? (
+        <a href={url} target="_blank" rel="noreferrer" class="transition-colors hover:text-accent">
+          {project.title}
+        </a>
+      ) : (
+        project.title
+      )}
     </h3>
     {project.period && <p class="mt-1 font-mono text-sm text-accent">{project.period}</p>}
   </header>
 
   {imageSrc && (
     <div class="w-full max-w-3xl overflow-hidden rounded-xl">
-      <img
-        src={imageSrc}
-        alt={project.imageAlt ?? ''}
-        class="w-full h-56 object-cover"
-        loading="lazy"
-        decoding="async"
-      />
+      {url ? (
+        <a href={url} target="_blank" rel="noreferrer" aria-label={`Visit the live ${project.title}`}>
+          <img
+            src={imageSrc}
+            alt={project.imageAlt ?? ''}
+            class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+            loading="lazy"
+            decoding="async"
+          />
+        </a>
+      ) : (
+        <img
+          src={imageSrc}
+          alt={project.imageAlt ?? ''}
+          class="w-full h-56 object-cover"
+          loading="lazy"
+          decoding="async"
+        />
+      )}
     </div>
+  )}
+
+  {url && (
+    <a
+      href={url}
+      target="_blank"
+      rel="noreferrer"
+      class="inline-flex items-center gap-2 text-sm font-medium text-accent transition-colors hover:text-slate-light"
+    >
+      Visit the live site
+      <span aria-hidden="true">&rarr;</span>
+    </a>
   )}
 
   <div class="space-y-4">

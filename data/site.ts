@@ -9,135 +9,92 @@
  */
 
 export const site = {
-  url: 'https://example.com',
+  url: 'https://projects-portfolio.annalidvall.workers.dev/',
   meta: {
-    title: 'Alex Morgan | Full-stack engineer',
+    title: 'Anna Lidvall | Portfolio',
     description:
-      'Portfolio example: shipping reliable web products with clear architecture, tests, and delivery practices.',
+      'Portfolio of Anna Lidvall, focused on SEO and UX research, studying Digital Information Design and Development at the University of Borås.',
   },
   hero: {
-    name: 'Alex Morgan',
-    role: 'Full-stack engineer',
-    tagline: 'From product intent to production — pragmatic systems, accessible UI, and maintainable code.',
-    contact: 'Open to collaborations and senior IC roles on product-minded teams.',
-    avatarSrc: '/favicon.svg',
-    avatarAlt: 'Alex Morgan',
+    name: 'Anna Lidvall',
+    role: 'SEO & UX',
+    tagline: 'I work with SEO and UX research to make websites that are easy to find and easy to use.',
+    contact: 'I study Digital Information Design and Development in Sweden. Open to new opportunities, let\'s connect!',
+    avatarSrc: '/anna.jpg',
+    avatarAlt: 'Portrait of Anna Lidvall',
   },
   about: {
     paragraphs: [
-      'A brief, compelling introduction about who you are and what you do. Mention your core philosophy, your passion for building digital products, and your drive for creating efficient, high-impact solutions.',
-      'I care about clear boundaries between modules, automated checks in CI, and documentation that helps the next contributor ship safely.',
+      'I am Anna Lidvall. I study the bachelor program in Digital Information Design and Development (Kandidatprogram i digital informationsdesign och utveckling) at the University of Borås in Sweden, and I spent an exchange semester at Saxion University of Applied Sciences in Enschede. My main interests are SEO and UX research, in other words how people find a website and how easy it is to use once they get there.',
+      'My latest project is a website for Eira Bygg och Fix, a small building and handyman company near Gothenburg, Sweden. I planned the content and the user flow, wrote clear copy in Swedish, and set up the SEO so the company can be found in search. I can also handle the code side, so I built the site myself, but the design and research is where I spend most of my time.',
       {
-        heading: 'Example focus areas',
+        heading: 'What I focus on',
         bullets: [
-          'Designing APIs and client boundaries with typed contracts',
-          'Performance budgets, caching, and pragmatic observability',
-          'Shipping incrementally with feature flags and rollback-friendly deploys',
+          'SEO: keyword research, structured data (JSON-LD), meta tags, and content that ranks',
+          'UX research: user flows, clear navigation, and content that is easy to scan',
+          'Accessibility and mobile-first layouts so the site works for everyone',
         ],
       },
       {
-        heading: 'Sample stack',
-        techItems: ['TypeScript', 'Astro', 'Tailwind CSS', 'Node', 'Vitest'],
+        heading: 'Tools I work with',
+        techItems: ['SEO', 'UX Research', 'Content Design', 'HTML', 'CSS', 'JavaScript'],
       },
     ],
   },
   experiences: [
     {
       period: '2025',
-      title: 'Lead Product Designer',
-      company: 'Lumen Studio',
+      title: 'SEO & UX (School Project)',
+      company: 'Eira Bygg och Fix',
       summary:
-        'Built a polished portfolio experience with accessible UI, motion-led interactions, and reusable components.',
+        'I planned the content, user flow, and SEO for a small Swedish building company, and built the website to match.',
       highlights: [
-        'Designed and shipped the complete website using Astro, Tailwind CSS, and content-driven components',
-        'Crafted consistent responsive layouts and accessible typography across desktop and mobile',
-        'Optimized asset delivery and performance for sub-1s page load metrics',
+        'Did keyword research and wrote clear Swedish copy so the company can be found in local search',
+        'Added SEO with schema.org JSON-LD data, meta descriptions, and a clear page structure',
+        'Designed the user flow and navigation, with a mobile menu and an easy path to the quote form',
+        'Built the site myself with HTML, CSS, and JavaScript, plus a small Node and Express backend for the form',
       ],
-      tech: ['TypeScript', 'Astro', 'Tailwind CSS', 'Node', 'Vite'],
-    },
-    {
-      period: '2024',
-      title: 'Frontend Architect',
-      company: 'Nova Launch',
-      summary:
-        'Delivered a modular marketing site and interactive product showcase for a launch-ready SaaS brand.',
-      highlights: [
-        'Implemented a component-based design system with reusable cards, buttons, and hero sections',
-        'Built content-driven project pages, archive views, and client-side navigation enhancements',
-        'Added cross-browser polish and performance tuning with image optimization and lazy loading',
-      ],
-      tech: ['Astro', 'TypeScript', 'Tailwind CSS', 'Node', 'Vite'],
-    },
-    {
-      period: '2023',
-      title: 'UI Engineer',
-      company: 'Orbital Creative',
-      summary:
-        'Created an interactive product showcase with a clean visual system and accessible component library.',
-      highlights: [
-        'Built a flexible project card system for content updates without code changes',
-        'Improved brand consistency with typography, color, and motion guidelines',
-        'Added testing and quality checks for cross-device UI fidelity',
-      ],
-      tech: ['Astro', 'Tailwind CSS', 'JavaScript', 'Node', 'Vitest'],
+      tech: ['SEO', 'UX Research', 'Content Design', 'HTML', 'CSS', 'JavaScript'],
     },
   ],
   featuredProjects: [
     {
-      title: 'Lumen Studio Website',
+      title: 'Eira Bygg och Fix Website',
       period: '2025',
-      summary: 'Built a polished portfolio experience with accessible UI, motion-led interactions, and reusable components.',
-      solution: 'Designed a modular component system with Astro and Tailwind CSS, ensuring consistent brand experience across all breakpoints.',
-      impact: 'Achieved sub-1s page load metrics and 95+ Lighthouse scores through optimized asset delivery and lazy loading strategies.',
-      image: 'astro-01.webp',
-      imageAlt: 'Lumen Studio website showcase',
+      url: 'https://eirafix.annalidvall.workers.dev/',
+      summary: 'A website for a small building and handyman company near Gothenburg. It shows the services, a project gallery, customer reviews, and a quote form.',
+      solution: 'I planned the content and user flow, wrote the Swedish copy, and set up the SEO so the company can be found in local search. I also built the site, with a small backend that emails each quote request.',
+      impact: 'A clear, easy-to-use site that helps the company show up in search and gives customers a simple way to ask for a quote.',
+      image: 'eira-site.jpg',
+      imageAlt: 'Home page of the Eira Bygg och Fix website',
       techCategories: [
         {
-          category: 'Frontend',
-          items: ['TypeScript', 'Astro', 'Tailwind CSS', 'Responsive Design'],
+          category: 'SEO',
+          items: ['Keyword Research', 'JSON-LD Structured Data', 'Meta Tags'],
         },
         {
-          category: 'Performance',
-          items: ['Asset Optimization', 'Lazy Loading', 'Image CDN'],
-        },
-      ],
-    },
-    {
-      title: 'Nova Launch Marketing Platform',
-      period: '2024',
-      summary: 'Delivered a modular marketing site and interactive product showcase for a launch-ready SaaS brand.',
-      solution: 'Implemented a content-driven architecture with reusable card components and dynamic project pages, enabling non-technical content updates.',
-      impact: 'Reduced content update time by 80% through intuitive component-based structure; enabled marketing team independence.',
-      image: 'astro-02.jpeg',
-      imageAlt: 'Nova Launch platform interface',
-      techCategories: [
-        {
-          category: 'Frontend',
-          items: ['Astro', 'TypeScript', 'Tailwind CSS'],
+          category: 'UX',
+          items: ['User Flow', 'Content Design', 'Accessibility', 'Mobile-first'],
         },
         {
-          category: 'Developer Experience',
-          items: ['Vite', 'ESLint', 'Automated Testing'],
+          category: 'Build',
+          items: ['HTML', 'CSS', 'JavaScript', 'Node.js'],
         },
       ],
     },
   ],
   projectArchivePage: {
     title: 'All projects',
-    description: 'Project archive: dates, roles, and technologies across representative engagements.',
-    intro: 'A concise archive of engagements and representative work.',
+    description: 'A short list of the projects I have worked on during my studies.',
+    intro: 'Dates, roles, and the technologies I used on each project.',
   },
   projectArchive: [
-    { date: '2025', project: 'Design system rollout', role: 'Frontend', techStack: 'Astro, CSS, Storybook' },
-    { date: '2024', project: 'Checkout reliability', role: 'Full-stack', techStack: 'TypeScript, Postgres, Redis' },
-    { date: '2024', project: 'Auth hardening', role: 'Backend', techStack: 'OAuth2, JWT, rate limits' },
-    { date: '2023', project: 'Analytics pipeline', role: 'Data', techStack: 'SQL, dbt, warehouse' },
-    { date: '2023', project: 'Mobile web refresh', role: 'Frontend', techStack: 'HTML, CSS, a11y audits' },
+    { date: '2025', project: 'Eira Bygg och Fix website', role: 'SEO & UX', techStack: 'SEO, UX Research, Content Design, HTML, CSS, JavaScript' },
   ],
   contact: {
-    email: 'hello@example.com',
-    github: 'https://github.com/',
-    linkedin: 'https://www.linkedin.com/',
+    email: 'anna.lidvall@pm.me',
+    github: 'https://github.com/AnnaLidvall',
+    linkedin: 'https://www.linkedin.com/in/annalidvall',
   },
 } as const;
 
